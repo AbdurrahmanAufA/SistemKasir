@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5FD1CC82-F95B-465B-9B73-713FA4FE821B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SistemKasir.My.MyApplication</StartupObject>
+    <RootNamespace>SistemKasir</RootNamespace>
+    <AssemblyName>SistemKasir</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SistemKasir.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SistemKasir.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\Cetak.vb" />
+    <Compile Include="Class\ClassInterface.vb" />
+    <Compile Include="Class\msaConn.vb" />
+    <Compile Include="Explore\frmExplo2.Designer.vb">
+      <DependentUpon>frmExplo2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Explore\frmExplo2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Explore\frmExplo.Designer.vb">
+      <DependentUpon>frmExplo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Explore\frmExplo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmMaster.Designer.vb">
+      <DependentUpon>FrmMaster.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmMaster1.Designer.vb">
+      <DependentUpon>FrmMaster1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmMaster1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmMaster2.Designer.vb">
+      <DependentUpon>FrmMaster2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmMaster2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmMaster3.Designer.vb">
+      <DependentUpon>FrmMaster3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmMaster3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmMaster4.Designer.vb">
+      <DependentUpon>FrmMaster4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmMaster4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmMaster5.Designer.vb">
+      <DependentUpon>FrmMaster5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmMaster5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmMasterR.Designer.vb">
+      <DependentUpon>frmMasterR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmMasterR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmSearch.Designer.vb">
+      <DependentUpon>FrmSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmTransaksi.Designer.vb">
+      <DependentUpon>FrmTransaksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmTransaksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmTransaksi2.Designer.vb">
+      <DependentUpon>FrmTransaksi2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmTransaksi2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmUtama.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmUtama.Designer.vb">
+      <DependentUpon>FrmUtama.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\ModExcel.vb" />
+    <Compile Include="Module\ModList.vb" />
+    <Compile Include="Module\ModMain.vb" />
+    <Compile Include="Module\PrintingFormat.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Explore\frmExplo.resx">
+      <DependentUpon>frmExplo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Explore\frmExplo2.resx">
+      <DependentUpon>frmExplo2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmMaster.resx">
+      <DependentUpon>FrmMaster.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmMaster1.resx">
+      <DependentUpon>FrmMaster1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmMaster2.resx">
+      <DependentUpon>FrmMaster2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmMaster3.resx">
+      <DependentUpon>FrmMaster3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmMaster4.resx">
+      <DependentUpon>FrmMaster4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmMaster5.resx">
+      <DependentUpon>FrmMaster5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmMasterR.resx">
+      <DependentUpon>frmMasterR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmSearch.resx">
+      <DependentUpon>FrmSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmTransaksi.resx">
+      <DependentUpon>FrmTransaksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmTransaksi2.resx">
+      <DependentUpon>FrmTransaksi2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmUtama.resx">
+      <DependentUpon>FrmUtama.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
